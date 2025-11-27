@@ -1,0 +1,14 @@
+{
+  "contentType": "json",
+  "data": {
+    "options": "${options}",
+    "title": "${title}",
+    "type": "${type}"
+  },
+  "handler": "return (res)=>res.code === 0 ? [res.data.answer, undefined] : [res.msg, undefined]",
+  "homepage": "https://your-domain.com/",
+  "method": "get",
+  "name": "我的国家安全题库",
+  "type": "GM_xmlhttpRequest",
+  "url": "http://localhost:3000/query"
+}
